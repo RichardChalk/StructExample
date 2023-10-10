@@ -12,7 +12,7 @@
 
             // timeC in this example is a 'class'
             // and a REFERENCE will be sent to the method UpdateTime()
-            TimeStruct timeC = new TimeStruct();
+            TimeClass timeC = new TimeClass();
             timeC.Seconds = 20;
             UpdateTime(timeC);
         }
@@ -22,5 +22,9 @@
             time.Seconds++;
         }
 
+        public static void UpdateTime(TimeClass time)
+        {
+            time.Seconds++;
+        }
     }
 }
